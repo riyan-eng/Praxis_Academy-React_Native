@@ -1,18 +1,15 @@
 import React from 'react'
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert } from 'react-native'
-import Login from './Login'
-import LotsOfStyles from './Styles'
-import FixedDimensionsBasics from './FixedDimensionsBasics'
-import FlexDimensionsBasics from './FlexDimensionsBasics'
+import { NavigationContainer } from '@react-navigation/native';
+import HomeNavigation from './src/navigation/HomeNavigation'
+
+
+
 
 const App = () => {
   return (
-    <View>
-      {/* <Login/> */}
-      {/* <LotsOfStyles/> */}
-      {/* <FixedDimensionsBasics/> */}
-      {/* <FlexDimensionsBasics/> */}
-    </View>
+    <NavigationContainer>
+      <HomeNavigation/>
+    </NavigationContainer>
   )
 }
 
